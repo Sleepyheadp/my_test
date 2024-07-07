@@ -1,5 +1,5 @@
 export default {
-	proess() {
+	process() {
 		return { code: "module.exports = {}" };
 	},
 	getCacheKey() {
