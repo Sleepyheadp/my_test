@@ -2,7 +2,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount, shallowMount } from '@vue/test-utils'
 import Foo from '../Foo.vue'
-import { describe } from 'vitest'
 
 /* describe('Foo.vue', () => {
   it('mount', () => {

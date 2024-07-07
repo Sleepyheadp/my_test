@@ -1,8 +1,21 @@
 <script setup>
-import Foo from './components/Foo.vue'
+import { ref } from 'vue'
+// import Foo from './components/Foo.vue'
+import Counter from './components/Counter.vue'
+let num = ref(0)
+function increase() {
+  num.value++
+  console.log('clicked', num)
+}
 </script>
 
-<template><Foo></Foo></template>
+<template>
+  <!-- <Foo></Foo> -->
+  <div>
+    {{ num }}
+    <Counter @increase="increase"></Counter>
+  </div>
+</template>
 
 <style scoped>
 header {
