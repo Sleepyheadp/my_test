@@ -2,7 +2,9 @@
 import { ref } from 'vue'
 // import Foo from './components/Foo.vue'
 import Counter from './components/Counter.vue'
+import Password from './components/Password.vue'
 let num = ref(0)
+let minLength = 10
 function increase() {
   num.value++
   console.log('clicked', num)
@@ -14,6 +16,7 @@ function increase() {
   <div>
     {{ num }}
     <Counter @increase="increase"></Counter>
+    <Password :minLength="minLength"></Password>
   </div>
 </template>
 
